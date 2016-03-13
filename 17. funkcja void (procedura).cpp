@@ -1,0 +1,32 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+ 
+void kopiowanie(char znak) // Funkcja typu void - odpowiednik procedury, nie zwraca danych ktore mozna poddac obrobce
+{
+  for(int i=0; i<30; i++)
+    cout<<znak << " ";
+}
+ 
+int main()
+{
+ 
+  char znak;
+ 
+  cout<<"Podaj litere lub liczbe, ktora chcesz powielic  30 razy: ";
+  cin>>znak;
+ 
+  cout << endl << endl;
+ 
+  kopiowanie(znak);   //wywo³anie funkcji kopiowanie(char znak)
+  
+  cout << endl << endl;
+ 
+  system("pause");
+  return 0;
+}
+
+/*
+funcje tego typu wywo³ujemy wypisuj¹c tylko jej nazwê z ewentualnymi argumentami 
+gdy tych argumentów nie ma, podajemy nazwê wywo³ywanej funkcji z pustym nawiasem np. powiel().
+*/
